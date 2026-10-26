@@ -1,0 +1,39 @@
+{
+  "sample_count": 5000,
+  "target_stats": {
+    "mean": 6.230980000000001,
+    "std": 1.2787013940130862,
+    "p25": 5.1,
+    "p50": 6.1,
+    "p75": 7.1,
+    "min": 3.6,
+    "max": 9.4
+  },
+  "feature_averages": {
+    "avg_daily_usage_hours": 5.07846,
+    "daily_unlocks": 171.4526,
+    "study_hours": 3.00842,
+    "physical_activity_hours": 1.7514,
+    "sleep_hours_per_night": 6.634579999999999
+  },
+  "stress_level_distribution": {
+    "Very High": 1621,
+    "High": 1440,
+    "Medium": 1295,
+    "Low": 644
+  },
+  "platform_distribution": {
+    "Instagram": 1130,
+    "TikTok": 918,
+    "Facebook": 719,
+    "LinkedIn": 523,
+    "YouTube": 491,
+    "Twitter": 462,
+    "Snapchat": 420,
+    "WhatsApp": 175,
+    "LINE": 50,
+    "VKontakte": 40,
+    "KakaoTalk": 36,
+    "WeChat": 36
+  }
+}

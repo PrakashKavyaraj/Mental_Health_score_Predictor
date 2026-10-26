@@ -1,0 +1,28 @@
+{
+  "model_name": "LightGBM Regressor",
+  "version": "2.0.0-pro",
+  "train_date": "2026-10-26 18:23:11",
+  "metrics": {
+    "test_r2": 0.8372993407368605,
+    "test_mae": 0.40875761537089195,
+    "test_rmse": 0.5311716052620521,
+    "residual_std": 0.5310966522475927,
+    "confidence_margin_90": 0.8736539929472901,
+    "confidence_margin_95": 1.0409494384052818
+  },
+  "size_kb": 95.8115234375,
+  "features_used": [
+    "Age",
+    "Gender",
+    "Country",
+    "Academic_Level",
+    "Most_Used_Platform",
+    "Purpose_Of_Use",
+    "Avg_Daily_Usage_Hours",
+    "Daily_Unlocks",
+    "Study_Hours",
+    "Physical_Activity_Hours",
+    "Sleep_Hours_Per_Night",
+    "Stress_Level"
+  ]
+}
