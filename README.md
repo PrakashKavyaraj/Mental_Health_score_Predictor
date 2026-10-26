@@ -1,3 +1,14 @@
+---
+title: Student Mental Health Score Predictor Pro
+emoji: 🧠
+colorFrom: green
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+license: mit
+---
+
 # 🧠 Student Mental Health Signal Pro: Explainable AI & Wellness Modeling
 
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.14-blue.svg)](https://www.python.org/)
