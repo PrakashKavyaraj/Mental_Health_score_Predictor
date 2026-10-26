@@ -1,10 +1,11 @@
 (() => {
   "use strict";
 
-  // Dynamic API base resolution: use current origin if served via FastAPI, otherwise default to localhost:8000
-  let API_BASE = window.location.origin.includes("http") && !window.location.origin.includes("file:")
+  // Dynamic API base resolution: use current origin if served via FastAPI, otherwise default to production Render URL
+  const PROD_API_URL = "https://mental-health-score-predictor-p754.onrender.com";
+  let API_BASE = (window.location.origin && window.location.origin.startsWith("http") && !window.location.origin.includes("file:"))
     ? window.location.origin
-    : "http://localhost:8000";
+    : PROD_API_URL;
 
   const form = document.getElementById("predict-form");
   const submitBtn = document.getElementById("submit-btn");
@@ -482,7 +483,11 @@
       const data = await res.json();
       renderResult(data);
     } catch (err) {
-      renderError("Could not connect to model server. Ensure FastAPI is running on localhost:8000.");
+      if (API_BASE.includes("onrender.com")) {
+        renderError("The cloud server was waking up from sleep mode (Render free instances take ~30–45s on cold start). Please click 'Try Again' now!");
+      } else {
+        renderError(err.message && !err.message.includes("Failed to fetch") ? err.message : "Could not connect to model server. If testing locally, ensure FastAPI is running on localhost:8000, or use the live cloud URL.");
+      }
     } finally {
       setSubmitting(false);
     }
