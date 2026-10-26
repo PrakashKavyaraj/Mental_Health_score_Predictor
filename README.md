@@ -11,11 +11,14 @@ license: mit
 
 # 🧠 Student Mental Health Signal Pro: Explainable AI & Wellness Modeling
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)](https://mental-health-score-predictor-p754.onrender.com)
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.14-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-v0.115+-009688.svg)](https://fastapi.tiangolo.com/)
 [![LightGBM](https://img.shields.io/badge/LightGBM-4.3+-brightgreen.svg)](https://lightgbm.readthedocs.io/)
 [![XAI](https://img.shields.io/badge/Explainability-TreeSHAP-orange.svg)](https://shap.readthedocs.io/)
 [![Tests](https://img.shields.io/badge/Tests-Pytest%20Passing-success.svg)](https://docs.pytest.org/)
+
+**🚀 Live Production URL**: [https://mental-health-score-predictor-p754.onrender.com](https://mental-health-score-predictor-p754.onrender.com)
 
 An advanced, production-grade Machine Learning microservice and interactive web dashboard for predicting student mental wellness from digital behavior and daily lifestyle rhythms.
 
