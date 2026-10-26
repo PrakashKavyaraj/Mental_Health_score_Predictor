@@ -14,13 +14,18 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
+\usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-%----------FONT OPTIONS----------
+%----------COLOR & LINK OPTIONS----------
+% Professional hyperlink blue
+\definecolor{linkblue}{RGB}{0, 102, 204}
+\newcommand{\link}[2]{\href{#1}{\textcolor{linkblue}{\underline{#2}}}}
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -89,9 +94,9 @@
 \begin{center}
     \textbf{\Huge \scshape Prakash Kavyaraj} \\ \vspace{3pt}
     \small +91 7439318746 $|$ 
-    \href{mailto:prakashkavyaraj0809@gmail.com}{\underline{prakashkavyaraj0809@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/prakash-kavyaraj-755022396/}{\underline{linkedin.com/in/prakash-kavyaraj}} $|$
-    \href{https://github.com/PrakashKavyaraj}{\underline{github.com/PrakashKavyaraj}}
+    \link{mailto:prakashkavyaraj0809@gmail.com}{prakashkavyaraj0809@gmail.com} $|$ 
+    \link{https://www.linkedin.com/in/prakash-kavyaraj-755022396/}{linkedin.com/in/prakash-kavyaraj} $|$
+    \link{https://github.com/PrakashKavyaraj}{github.com/PrakashKavyaraj}
 \end{center}
 
 
@@ -116,7 +121,7 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {\href{https://bunchhh.com}{\underline{Bunchhh}}}{Oct 2026 -- Present}
+      {\link{https://bunchhh.com}{Bunchhh}}{Oct 2026 -- Present}
       {Frontend Developer \& QA Tester}{Remote / India}
       \resumeItemListStart
         \resumeItem{Engineered and refined responsive frontend interfaces using \textbf{React.js and modern UI/UX patterns}, improving client usability and visual hierarchy.}
@@ -132,7 +137,7 @@
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{Dhvani — Telephony Deepfake Voice Defense} $|$ \emph{PyTorch, FastAPI, ONNX, Redis, Docker}}{\href{https://github.com/PrakashKavyaraj/Dhvani}{\underline{GitHub}} $|$ \textbf{SIH 2024}}
+      {\textbf{Dhvani — Telephony Deepfake Voice Defense} $|$ \emph{PyTorch, FastAPI, ONNX, Docker}}{\link{https://github.com/PrakashKavyaraj/Dhvani}{GitHub} $|$ \textbf{SIH 2024}}
       \resumeItemListStart
         \resumeItem{Engineered a real-time deepfake defense platform screening live dual-stream telephony calls with a \textbf{sub-350 ms latency SLA}, evaluating acoustic authenticity, speech-to-speech LLM latency anomalies, and replay attacks.}
         \resumeItem{Developed a self-supervised acoustic classifier utilizing \textbf{XLS-R 300M} with a 25-layer Attentive Statistics Pooling (ASP) head, achieving \textbf{1.209\% Dev EER} and \textbf{0.0314 minDCF} on official \textbf{ASVspoof 5} across 35,000+ trials.}
@@ -142,7 +147,7 @@
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Explainable Mental Health AI Platform} $|$ \emph{Python, FastAPI, LightGBM, Docker}}{\href{https://mental-health-score-predictor-p754.onrender.com}{\underline{Live Demo}} $|$ \textbf{Oct 2026}}
+      {\textbf{Explainable Mental Health AI Platform} $|$ \emph{Python, FastAPI, LightGBM, Docker}}{\link{https://mental-health-score-predictor-p754.onrender.com}{Live Demo} $|$ \textbf{Oct 2026}}
       \resumeItemListStart
         \resumeItem{Engineered an \textbf{Explainable AI microservice} using LightGBM and 5-fold cross-validation, achieving an $\mathbf{R^2}$ \textbf{of 0.837} and compressing model footprint by \textbf{99.6\%} (25.7 MB to 95.8 KB) while eliminating overfitting.}
         \resumeItem{Integrated \textbf{TreeSHAP for real-time factor attribution} and counterfactual ``What-If'' habit simulations; deployed via \textbf{Docker on Render} with sub-50ms inference and dynamic psychometric boundary calibration.}
